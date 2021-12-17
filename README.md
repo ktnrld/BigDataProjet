@@ -22,13 +22,15 @@ Apprentis SI01 class ING5 :
 Le projet cherche à exploiter l’ensemble de données de IMDb. Les données de ces fichiers sont accessibles à tout le monde et peut être consulté ainsi que téléchargé à partir de https://datasets.imdbws.com/. A savoir que les données sont actualisées quotidiennement.
 
 De plus, nous avons accès à 7 fichiers data :
-•	name.basics.tsv.gz
-•	title.akas.tsv.gz
-•	title.basics.tsv.gz
-•	title.crew.tsv.gz
-•	title.episode.tsv.gz
-•	title.principals.tsv.gz
-•	title.ratings.tsv.gz
+```diff
+-	name.basics.tsv.gz
+-	title.akas.tsv.gz
+-	title.episode.tsv.gz
++	title.basics.tsv.gz
++	title.crew.tsv.gz
++	title.principals.tsv.gz
++	title.ratings.tsv.gz
+```
 
 L’ensemble des données IMDb Chaque ensemble de données est contenu dans un fichier au format TSV (valeurs séparées par des tabulations) compressé dans le jeu de caractères UTF-8. La première ligne de chaque fichier contient des en-têtes décrivant le contenu de chaque colonne. Un '\N' est utilisé pour indiquer qu'un champ particulier est manquant ou nul pour ce titre/nom.
 
