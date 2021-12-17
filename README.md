@@ -1,4 +1,4 @@
-# Projet BigData : Gestions de données de la base IMDB 
+# Projet BigData : Gestion de données de la base IMDB 
 
 ## Etudiants :
 
