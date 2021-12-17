@@ -57,8 +57,17 @@ Regardons le schème de tables :
 
 ---
 ## Prerequisites:
+
 ## Setting Up avec le cluster d'Adaltas
 ## Notre application
+Vous pouver vérifier la créations des répertoires dans HDFS
+
 ## Requêtes et résultats sur : Hive
+### 1. Création du HIVE DB :
+### 2. Création des Tables dans le format ORC :
+### 3. Reqêttes simples sur chaque table :
+### 4. Partitions faite sur les tables :
+### 5. Reqûettes plus complexes sur les tables :
+
 ## Requêtes et résultats sur : HBase
 ## Visualisation du dashboard : Graphana
