@@ -62,12 +62,19 @@ Regardons le schème de tables :
 ## Notre application
 Vous pouver vérifier la créations des répertoires dans HDFS
 
-## Requêtes et résultats sur : Hive
-### 1. Création du HIVE DB :
-### 2. Création des Tables dans le format ORC :
-### 3. Reqêttes simples sur chaque table :
-### 4. Partitions faite sur les tables :
-### 5. Reqûettes plus complexes sur les tables :
+# Requêtes et résultats sur : Hive
+## 1. Création du HIVE DB :
+## 2. Création des Tables dans le format ORC :
+## 3. Reqêttes simples sur chaque table :
+## 4. Partitions faite sur les tables :
+## 5. Reqûettes plus complexes sur les tables :
 
-## Requêtes et résultats sur : HBase
-## Visualisation du dashboard : Graphana
+# Requêtes et résultats sur : HBase
+# Visualisation du dashboard : Grafana
+## 1. Mise en place de Grafana dans un Docker Container
+## 2. Installation du Plugin CVS en Grafana
+## 3. Configuration du CSV datasource en Grafana
+## 3. Ecriture des requêttes et creation du dashboard en Grafana
+
+
+
