@@ -1,5 +1,14 @@
 # Projet BigData : Gestion de données de la base IMDB 
 
+Date d'échéance : 31/12/2021
+## Consignes 
+Le projet doit se concentrer sur les systèmes distribués Open Source.
+
+Un projet technique peut être l'installation d'une pile de technologies et/ou l'écriture de code pour traiter les données sur la pile. Il doit inclure l' implémentation : code, fichiers de configuration. Dans ce cas:
+Le code doit être hébergé sur un dépôt Git.
+Le code doit être documenté (README, commentaires en ligne).
+Le rapport de projet doit inclure une description claire du projet, les étapes de sa mise en œuvre et une liste des problèmes rencontrés.
+
 ## Etudiants :
 
 Apprentis Ing5 SI-01 :
@@ -47,6 +56,9 @@ Regardons le schème de tables :
 
 ## Schema of imdb_title.basics
 ![titlecrew](https://user-images.githubusercontent.com/71117842/146517471-588ae764-f6e1-4778-a60b-3758fd6de7e9.png)
+
+## Cas d'utilisation
+Nous sommes une plateforme qui permet de répondre aux requêtes des clients.
 
 ## Stack
 
