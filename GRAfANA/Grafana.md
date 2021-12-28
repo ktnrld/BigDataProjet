@@ -25,3 +25,7 @@ On télécharge le plug-in csv afin de pouvoir y mettre nos tables.
 
 Nous mettons ensuite nos tables qui sont conservés en local.
 ![csvtitre](https://user-images.githubusercontent.com/71653765/147604442-8c9f6aa5-85ba-48d7-a697-0b8e2406405d.png)
+
+## Création d'un dashboard
+Nous nous rendons sur l'icone création d'un dashboard.
+![dashboard](https://user-images.githubusercontent.com/71653765/147604550-8a345bf7-73ae-499d-b2d1-0ede9fd80358.png)
