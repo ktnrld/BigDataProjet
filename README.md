@@ -102,11 +102,23 @@ Puis, nous allons faire une copie de edge sur hdfs :
 ```
 ## Requêtes et résultats sur : Hive
 Aller voir le dossier HIVE : https://github.com/ktnrld/BigDataProjet/tree/main/HIVE
+Dans le dossier vous allez trouver :
+- Un README qui contient tous les informations techniques faites.
+- Un fichier qui contient les requêttes effectués ainsi que son résultat en image
+- Un fichier avec le script de commandes
 
 ## Requêtes et résultats sur : HBase
 Aller voir le dossier HBase : https://github.com/ktnrld/BigDataProjet/tree/main/HBASE
+Dans le dossier vous allez trouver :
+- Un README qui contient tous les informations techniques faites.
+- Un fichier qui contient les requêttes effectués ainsi que son résultat en image
+- Un fichier avec le script de commandes
 
 ## Visualisation du dashboard : Grafana
 Aller voir le dossier Grafana : https://github.com/ktnrld/BigDataProjet/tree/main/GRAfANA
+Dans le dossier vous allez trouver :
+- Un README qui contient tous les informations techniques faites.
+- Un fichier qui contient les requêttes effectués ainsi que son résultat en image
+- Un fichier avec le script de commandes
 
 
