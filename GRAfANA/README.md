@@ -5,7 +5,7 @@
 ```diff
 + Plugin Google Sheets officiel de Grafana Labs pour la communauté
 ```
-
+https://grafana.com/grafana/plugins/grafana-googlesheets-datasource/installation
 
 ## EXIGENCES :
 ```diff
