@@ -92,9 +92,9 @@ Résultat :
       FROM projet_kdr_title_basics
       WHERE primaryname = 'Quentin Tarantino'
     ) n
-    JOIN projet_kdr_title_basics_title_crew c ON array_contains(c.director, n.nconst)
-    JOIN projet_kdr_title_basics_title_ratings r ON c.tconst = r.tconst
-    JOIN projet_kdr_title_basics_title_basics t ON c.tconst = t.tconst
+    JOIN projet_kdr_title_crew c ON array_contains(c.director, n.nconst)
+    JOIN projet_kdr_title_ratings r ON c.tconst = r.tconst
+    JOIN projet_kdr_title_basics t ON c.tconst = t.tconst
     ORDER BY r.averagerating DESC
     LIMIT 5;
 ```
