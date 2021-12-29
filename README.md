@@ -82,8 +82,16 @@ Vous pouver vérifier la création des répertoires dans HDFS
 ## 5. Reqûettes plus complexes sur les tables :
 
 # Requêtes et résultats sur : HBase
+
 # Visualisation du dashboard : Grafana
+
 ## 1. Mise en place de Grafana dans un Docker Container
+Démarrez le conteneur Docker en liant Grafana au port externe 3000 grâce à la commande :
+```diff
+docker run -d -p 3000:3000 --name=grafanaserver -e "GF_SECURITY_ADMIN_USER=admin" -e "GF_SECURITY_ADMIN_PASSWORD=password" grafana/grafana:latest
+```
+![image](https://user-images.githubusercontent.com/71117842/147662094-57aa34d3-c45d-4007-ad7d-bb7d1927d33a.png)
+
 ## 2. Installation du Plugin CVS en Grafana
 ## 3. Configuration du CSV datasource en Grafana
 ## 3. Ecriture des requêttes et creation du dashboard en Grafana
