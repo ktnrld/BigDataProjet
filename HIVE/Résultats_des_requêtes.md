@@ -18,11 +18,12 @@ Résultat :
     FROM projet_kdr_title_basics
     WHERE runtimeminutes < 60;
 ```
-
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147705287-09c4c7d3-5737-491f-987e-b79c6eb01993.png)
 #### Nombre de films dont la durée est comprise entre 1 et 2 heures - FILM NORMAL
 ```
     SELECT count(*) AS nbFilmNormal
-    FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+    FROM projet_kdr_title_basics
     WHERE runtimeminutes > 60 & runtimesminutes < 120;
 ```
 #### Nombre de films dont la durée est supérieur à 2 heures - FILM LONG
