@@ -16,11 +16,15 @@ Nous cherchons à faire une table comme cela :
 ## Création d'un fichier excel spécial
 
 
+## Création de la table Hbase
+```
+    create nomBase, 'CF', 'CF'
+
 ## Hbase --> Hive
-Nous allons maintenant créer une table externe.
+Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
 ```
     CREATE EXTERNAL TABLE hbase_table (A COMPLETER) 
     STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
-    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:name")
+    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:nom de la column family")
     TBLPROPERTIES ("hbase.table.name" = "client");
 ```
