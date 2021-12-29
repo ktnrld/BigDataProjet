@@ -60,9 +60,12 @@ Résultat :
       SELECT tconst
       FROM projet_kdr_title_basics
       WHERE array_contains(genres, 'Romance')
-    ) titles JOIN projet_kdr_title_basics ratings
-    ON titles.tconst = ratings.tconst;
+    ) titles JOIN projet_kdr_title_ratings r
+    ON titles.tconst = r.tconst;
 ```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147706496-0606da8a-2eb8-425c-bd80-57de0d6423ca.png)
+
 #### Note moyenne des films dramatique
 ```
     SELECT avg(averagerating) AS noteMoyFilmDramatique
@@ -70,8 +73,8 @@ Résultat :
       SELECT tconst
       FROM projet_kdr_title_basics
       WHERE array_contains(genres, 'Drama')
-    ) titles JOIN projet_kdr_title_basics ratings
-    ON titles.tconst = ratings.tconst;
+    ) titles JOIN projet_kdr_title_ratings r
+    ON titles.tconst = r.tconst;
 ```
 ### Requête demandé par notre professeur
 #### Top 5 des films qui ont été réalisés par Tarantino
