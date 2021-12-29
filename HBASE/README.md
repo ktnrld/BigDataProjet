@@ -1,4 +1,5 @@
 # MISE EN PLACE DE HBase
+![image](https://user-images.githubusercontent.com/71117842/147707253-9772cbb3-b5d8-4508-a018-8162d94e1b0c.png)
 
 ## Connection à Hbase
 Premièrement, nous nous rendons sur hbase.
