@@ -1,4 +1,5 @@
 # MISE EN PLACE DE HIVE
+![image](https://user-images.githubusercontent.com/71117842/147707283-d1d2d35f-fab3-4284-a791-4f325eb88274.png)
 
 ### Téléchargement des tables
 
