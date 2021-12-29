@@ -1,6 +1,6 @@
 # Projet BigData : Gestion de données de la base IMDB 
 
-Date d'échéance : 31/12/2021
+Dates d'échéance : 31/12/2021
 ## Consignes 
 Le projet doit se concentrer sur les systèmes distribués Open Source.
 
