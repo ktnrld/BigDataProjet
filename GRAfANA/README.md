@@ -5,16 +5,17 @@
 ```diff
 + Plugin Google Sheets officiel de Grafana Labs pour la communauté
 ```
+
 https://grafana.com/grafana/plugins/grafana-googlesheets-datasource/installation
 
 ## EXIGENCES :
+
 ```diff
 + Docker
 + Compte google
 + Google Drive
 + Données sur des tableau GoogleSheet
 ```
-
 
 ## 1. Mise en place de Grafana dans un Docker Container
 
@@ -55,34 +56,40 @@ Nous ne pouvons pas ouvrir le dataset il faut se loger avec le plugin actif
 
 1. Ouvrez la page Identifiants dans la console API Google.
 2. Cliquez sur Créer des informations d'identification, puis sur la clé API.
- ![image](https://user-images.githubusercontent.com/71117842/147694946-6ab2999b-a449-4a09-9852-29dcd2412139.png)
+   ![image](https://user-images.githubusercontent.com/71117842/147694946-6ab2999b-a449-4a09-9852-29dcd2412139.png)
 3. Restreindre la clé API pour accéder uniquement à Google Drive et Google Sheets et enregistrer
-![image](https://user-images.githubusercontent.com/71117842/147694977-011dbfc7-bfcc-44ed-9c45-a3a9d9cd3a12.png)
+   ![image](https://user-images.githubusercontent.com/71117842/147694977-011dbfc7-bfcc-44ed-9c45-a3a9d9cd3a12.png)
 4. Copiez la clé et collez-la dans le champ Clé API de la source de données.
-![image](https://user-images.githubusercontent.com/71117842/147666527-26fc3c96-8503-41a0-8a51-16e3be04e9c0.png)
+   ![image](https://user-images.githubusercontent.com/71117842/147666527-26fc3c96-8503-41a0-8a51-16e3be04e9c0.png)
 
 ## 3. Configuration de la feuille googlesheet en Grafana
 
 ### Rendre votre propre feuille Google publique
-Allez simplement sur votre google Drive et sélectionnez votre feuille google, assurez-vous de cliquer sur partager et choisissez avancé en bas à droite 
+
+Allez simplement sur votre google Drive et sélectionnez votre feuille google, assurez-vous de cliquer sur partager et choisissez avancé en bas à droite
 ![image](https://user-images.githubusercontent.com/71117842/147695362-34bd7e9a-fe11-4a48-b708-c41c4a44461d.png)
 
 ```diff
 https://docs.google.com/spreadsheets/d/1q2u8SYBjb3Q_uscxkK2UYAGE0LFKBfk-meOPO5w9EKY/edit?usp=sharing
 ```
+
 ### Construire le tableau de bord
+
 Revenez à Garfana et choisissez Ajouter une requête
 Dans les sources de données, sélectionnez Google Sheets, Spreadsheet ID est la valeur comprise entre "/d/" et "/edit" dans l'URL de votre feuille de calcul.
 
 ![image](https://user-images.githubusercontent.com/71117842/147695457-ba7e5360-ea4d-4d76-b9c8-b978217a16b3.png)
 
-** ID de feuille de calcul :
+\*\* ID de feuille de calcul :
+
 ```diff
 1q2u8SYBjb3Q_uscxkK2UYAGE0LFKBfk-meOPO5w9EKY
 ```
+
 ID de la feuille de calcul — Sélectionnez celui spreadsheetIdqui est utilisé pour identifier la feuille de calcul à accéder ou à modifier.
 
 Utiliser le filtre de temps - la première colonne sera filtrée par temps, vous pourrez filtrer toutes les lignes de la feuille de calcul qui se trouvent en dehors des limites de la plage de temps spécifiée dans le tableau de bord de Grafana.
+
 ## 3. Ecriture des requêttes et creation du dashboard en Grafana
 
 ![image](https://user-images.githubusercontent.com/71117842/147689504-7b05dbf3-5a03-4b56-92ee-f2ed31b04a85.png)
