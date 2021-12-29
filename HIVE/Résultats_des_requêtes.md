@@ -76,6 +76,10 @@ Résultat :
     ) titles JOIN projet_kdr_title_ratings r
     ON titles.tconst = r.tconst;
 ```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147706666-c8748f92-04c7-4e0d-852f-4ba141cf0728.png)
+
+
 ### Requête demandé par notre professeur
 #### Top 5 des films qui ont été réalisés par Tarantino
 ```
