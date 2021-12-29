@@ -91,8 +91,7 @@ Résultat :
       SELECT nconst
       FROM projet_kdr_name_basics
       WHERE primaryname = ${director}
-    ) n
-    JOIN projet_kdr_title_crew c ON array_contains(c.director, n.nconst)
+    ) n JOIN projet_kdr_title_crew c ON array_contains(c.director, n.nconst)
     JOIN projet_kdr_title_ratings r ON c.tconst = r.tconst
     JOIN projet_kdr_title_basics t ON c.tconst = t.tconst
     ORDER BY r.averagerating DESC
