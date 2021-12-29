@@ -66,7 +66,7 @@ Nous sommes une plateforme qui permet de répondre aux requêtes des clients.
 
 | Lib | Version |
 | ------ | ------ |
-| express | 4.17.1 |
+| Grafana | 6.7.1 |
 | mongoose | 5.11.8 |
 
 ---
