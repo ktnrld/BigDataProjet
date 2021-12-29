@@ -101,11 +101,12 @@ Puis, nous allons faire une copie de edge sur hdfs :
     Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
 ```
 ## Requêtes et résultats sur : Hive
-
+Aller voir le dossier HIVE : https://github.com/ktnrld/BigDataProjet/tree/main/HIVE
 
 ## Requêtes et résultats sur : HBase
+Aller voir le dossier HBase : https://github.com/ktnrld/BigDataProjet/tree/main/HBASE
 
 ## Visualisation du dashboard : Grafana
-
+Aller voir le dossier Grafana : https://github.com/ktnrld/BigDataProjet/tree/main/GRAfANA
 
 
