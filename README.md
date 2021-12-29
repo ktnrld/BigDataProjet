@@ -90,11 +90,11 @@ Vous pouver vérifier la création des répertoires dans HDFS
 
 ```diff
     Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet
-    ```
+```
 Nous allons créer un sous dossier à ce projet :
 ```diff
     Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet/sousDirectory
-    ```
+```
 Puis, nous allons faire une copie de edge sur hdfs :
 ```diff
     Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
