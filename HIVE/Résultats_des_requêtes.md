@@ -89,7 +89,7 @@ Résultat :
       r.averagerating AS avg_rating
     FROM (
       SELECT nconst
-      FROM projet_kdr_title_basics
+      FROM projet_kdr_name_basics
       WHERE primaryname = 'Quentin Tarantino'
     ) n
     JOIN projet_kdr_title_crew c ON array_contains(c.director, n.nconst)
