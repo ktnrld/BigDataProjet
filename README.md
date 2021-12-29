@@ -82,8 +82,23 @@ Nous sommes une plateforme qui permet de répondre aux requêtes des clients.
     ssh username@10.0.0.63
 ```
 ## Notre application
+
+Nous souhaitons faire une application en nous mettons dans la peau d'un utilisateur sur le site de IMDB, pour cela nous allons créer des tables sur HDFS ensuite nous allons faire des rêquettes sur HIVE et sur HBASE.
+
+
 Vous pouver vérifier la création des répertoires dans HDFS
 
+```diff
+    Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet
+    ```
+Nous allons créer un sous dossier à ce projet :
+```diff
+    Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet/sousDirectory
+    ```
+Puis, nous allons faire une copie de edge sur hdfs :
+```diff
+    Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
+```
 # Requêtes et résultats sur : Hive
 ## 1. Création du HIVE DB :
 ## 2. Création des Tables dans le format ORC :
