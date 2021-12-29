@@ -97,3 +97,5 @@ Résultat :
     ORDER BY r.averagerating DESC
     LIMIT 5;
 ```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147707141-1487e59a-2a95-4884-8d6f-538296179017.png)
