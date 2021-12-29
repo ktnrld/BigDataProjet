@@ -127,5 +127,6 @@ https://docs.google.com/spreadsheets/d/1q2u8SYBjb3Q_uscxkK2UYAGE0LFKBfk-meOPO5w9
 ```
 ## 3. Ecriture des requêttes et creation du dashboard en Grafana
 
+![image](https://user-images.githubusercontent.com/71117842/147689504-7b05dbf3-5a03-4b56-92ee-f2ed31b04a85.png)
 
 
