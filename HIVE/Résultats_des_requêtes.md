@@ -42,7 +42,7 @@ Résultat :
 ```
     SELECT avg(runtimeminutes) AS DureeMoyenneFilmRomantique
     FROM projet_kdr_title_basics
-    WHERE genre == "Romance";
+    WHERE genres == "Romance";
 ```
 
 ### FILM DRAMATIQUE - DUREE MOYENNE
@@ -58,9 +58,9 @@ Résultat :
     SELECT avg(averagerating) AS noteMoyFilmRomantique
     FROM (
       SELECT tconst
-      FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+      FROM projet_kdr_title_basics
       WHERE array_contains(genres, 'Romance')
-    ) titles JOIN ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics ratings
+    ) titles JOIN projet_kdr_title_basics ratings
     ON titles.tconst = ratings.tconst;
 ```
 #### Note moyenne des films dramatique
@@ -68,9 +68,9 @@ Résultat :
     SELECT avg(averagerating) AS noteMoyFilmDramatique
     FROM (
       SELECT tconst
-      FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+      FROM projet_kdr_title_basics
       WHERE array_contains(genres, 'Drama')
-    ) titles JOIN ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics ratings
+    ) titles JOIN projet_kdr_title_basics ratings
     ON titles.tconst = ratings.tconst;
 ```
 ### Requête demandé par notre professeur
