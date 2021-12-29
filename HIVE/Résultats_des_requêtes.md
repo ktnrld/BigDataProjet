@@ -90,7 +90,7 @@ Résultat :
     FROM (
       SELECT nconst
       FROM projet_kdr_name_basics
-      WHERE primaryname = 'Quentin Tarantino'
+      WHERE primaryname = ${director}
     ) n
     JOIN projet_kdr_title_crew c ON array_contains(c.director, n.nconst)
     JOIN projet_kdr_title_ratings r ON c.tconst = r.tconst
