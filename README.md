@@ -24,7 +24,9 @@ Apprentis Ing5 SI-01 :
 + Exploitation sur le cluster : Spark 
 + Visualisation des données sur Graphana
 ```
-![IMDb_Header_Page](https://user-images.githubusercontent.com/71117842/146515073-0d4678b5-81c1-4f61-9eed-43ee0ee3f447.jpg)
+
+![image](https://user-images.githubusercontent.com/71117842/147662245-1bc3959e-7cdb-4209-90f3-155826a96a57.png)
+
 
 # Informations sur le projet
 
