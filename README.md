@@ -1,4 +1,5 @@
 # Projet BigData : Gestion de données de la base IMDB 
+![image](https://user-images.githubusercontent.com/71117842/147707307-2163329b-66d9-4892-b2c4-e532d2d85d96.png)
 
 Date d'échéance : 31/12/2021
 ## Consignes 
