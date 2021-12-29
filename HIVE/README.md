@@ -56,6 +56,10 @@ Puis, nous avons besoin de faire :
     use ece_2021_fall_app_1;
 ```
 
+En plus, nous pouvons ajouter la commande ci-dessous :
+```
+    SET hivevar:ece_group=1;
+```
 ### Création des tables Hive
 
 Nous allons donc créer 7 tables correspondant aux 7 fichiers sur HDFS, mais cette fois-ci sur Hive.
