@@ -24,14 +24,14 @@ Résultat :
 ```
     SELECT count(*) AS nbFilmNormal
     FROM projet_kdr_title_basics
-    WHERE runtimeminutes > 60 AND runtimesminutes < 120;
+    WHERE runtimeminutes > 60 AND runtimeminutes < 120;
 ```
 Résultat : 
 #### Nombre de films dont la durée est supérieur à 2 heures - FILM LONG
 ```
     SELECT count(*) AS nbFilmLong
     FROM projet_kdr_title_basics
-    WHERE runtimesminutes > 120;
+    WHERE runtimeminutes > 120;
 ```
 Résultat : 
 ![image](https://user-images.githubusercontent.com/71653765/147705412-35fb113f-562b-4ed5-b551-82d05e98d785.png)
