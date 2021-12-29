@@ -109,13 +109,19 @@ Le format de fichier ORC (Optimized Row Columnar) offre un moyen très efficace 
 
 ### Affichage des tables et Partitions
 Nous souhaitons vérifier que nos tables ont bien été crée:
-https://github.com/ktnrld/BigDataProjet/issues/6#issue-1090672942
+![show tables 2](https://user-images.githubusercontent.com/71653765/147694956-06583a4f-74c1-4034-9ee1-cca006282a0a.png)
+
 Nous remarquons que nousa vons bien nos quatre tables avec leur quatre table orc.
 
-Nous avons aussi une table partitionné ( pour l'instant):
+Nous avons aussi quatre table partitionnées, étudions celle de rating : 
 ![tablepartitionne](https://user-images.githubusercontent.com/71653765/147692620-45d53d43-cd80-4648-b72a-b35fd3360d93.png)
 
 Nous avons choisi de partitionné selon le rating car nous avons précédemment vu que cela nous permettait de diviser le fichier en moins de 100 fichiers contrairement aux deux autres colonnes, par exemple partitionné par l'id auraient été inneficaces car seul le meme nombre de fichier aurait été créer.
+
+Grâce à la commande show partitions nous pouvons montrer cela : 
+![showpartition](https://user-images.githubusercontent.com/71653765/147692934-7bc2f592-f8b5-4273-b9ff-1b3af788869c.png)
+
+! Note : nous n'avons pas montré toutes les tables car nous avons pour tous fonctionner de la même manière. Quand nous souhaitions partitionner nous vérifions en avance le nombre de partition que cela créerait, si celle-ci valait moins de 100, nous décidions de partitionné par cette colonne.
 
 
 
