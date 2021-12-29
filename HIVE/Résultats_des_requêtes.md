@@ -27,6 +27,8 @@ Résultat :
     WHERE runtimeminutes > 60 AND runtimeminutes < 120;
 ```
 Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147705641-d6cef80a-6722-42a2-b382-434aa22ea4ca.png)
+
 #### Nombre de films dont la durée est supérieur à 2 heures - FILM LONG
 ```
     SELECT count(*) AS nbFilmLong
@@ -39,7 +41,7 @@ Résultat :
 #### Durée moyenne des films romantiques.
 ```
     SELECT avg(runtimeminutes) AS DureeMoyenneFilmRomantique
-    FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+    FROM projet_kdr_title_basics
     WHERE genre == "Romance";
 ```
 
@@ -47,7 +49,7 @@ Résultat :
 #### Durée moyenne des films dramatiques.
 ```
     SELECT avg(runtimeminutes) AS DureeMoyenneFilmDramatique
-    FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+    FROM projet_kdr_title_basics
     WHERE genre == "Drama";
 ```
 ### MEILLEUR FILM ROMANTIQUE
