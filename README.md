@@ -91,12 +91,13 @@ Vous pouver vérifier la création des répertoires dans HDFS
 
 Démarrez le conteneur Docker en liant Grafana au port externe 3000 grâce à la commande :
 ```diff
-docker run -d -p 3000:3000 --name=grafanaserver -e "GF_SECURITY_ADMIN_USER=admin" -e "GF_SECURITY_ADMIN_PASSWORD=password" grafana/grafana:latest
+docker run -d -p 3001:3000 --name=grafanaserver -e "GF_SECURITY_ADMIN_USER=admin" -e "GF_SECURITY_ADMIN_PASSWORD=password" grafana/grafana:latest
 ```
 Par exemple :
 
 ![image](https://user-images.githubusercontent.com/71117842/147662275-ca58a0b6-9500-42e6-b51d-8af81d8c8247.png)
 
+![image](https://user-images.githubusercontent.com/71117842/147663542-3cb483bb-8abe-40e6-b1cd-2f409b30a709.png)
 
 ## 2. Installation du Plugin CVS en Grafana
 Command to Install Grafana Plugin:
@@ -105,6 +106,8 @@ docker exec -it grafanaserver bash
 grafana-cli plugins install grafana-googlesheets-datasource
 ```
 ![image](https://user-images.githubusercontent.com/71117842/147662415-bc87b756-0d22-42cf-9a77-709f013ce546.png)
+
+![image](https://user-images.githubusercontent.com/71117842/147665226-211cae47-9b5f-4116-b4e4-759dfac12c9c.png)
 
 ## 3. Configuration du CSV datasource en Grafana
 ## 3. Ecriture des requêttes et creation du dashboard en Grafana
