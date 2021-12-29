@@ -109,6 +109,7 @@ Le format de fichier ORC (Optimized Row Columnar) offre un moyen très efficace 
 
 ### Affichage des tables et Partitions
 Nous souhaitons vérifier que nos tables ont bien été crée:
+
 ![show tables 2](https://user-images.githubusercontent.com/71653765/147694956-06583a4f-74c1-4034-9ee1-cca006282a0a.png)
 
 Nous remarquons que nousa vons bien nos quatre tables avec leur quatre table orc.
