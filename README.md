@@ -47,16 +47,16 @@ L’ensemble des données IMDb - Chaque ensemble de données est contenu dans un
 
 Regardons le schème de tables :
 
-## Schema of imdb_title.basics
-![titleprincipals](https://user-images.githubusercontent.com/71117842/146517468-bc595c48-214e-4c00-9f15-2bd54354003d.png)
+## Schema of imdb_name.basics
+![namebas](https://user-images.githubusercontent.com/71653765/147696911-b1fcbed7-dfae-4a1a-9e9d-4a8998d293a4.png)
 
 ## Schema of imdb_title.basics
 ![basicstitle](https://user-images.githubusercontent.com/71117842/146517469-e59dd63f-39db-4fb3-9635-4ca02db1b606.png)
 
-## Schema of imdb_title.basics
+## Schema of imdb_title.crew
 ![ratings](https://user-images.githubusercontent.com/71117842/146517470-2e0d22ba-de72-445f-a517-9a8b16976809.png)
 
-## Schema of imdb_title.basics
+## Schema of imdb_title.ratings
 ![titlecrew](https://user-images.githubusercontent.com/71117842/146517471-588ae764-f6e1-4778-a60b-3758fd6de7e9.png)
 
 ## Cas d'utilisation
