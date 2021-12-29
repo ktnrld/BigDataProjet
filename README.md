@@ -100,16 +100,12 @@ Puis, nous allons faire une copie de edge sur hdfs :
 ```diff
     Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
 ```
-# Requêtes et résultats sur : Hive
-## 1. Création du HIVE DB :
-## 2. Création des Tables dans le format ORC :
-## 3. Requêttes simples sur chaque table :
-## 4. Partitions faite sur les tables :
-## 5. Reqûettes plus complexes sur les tables :
+## Requêtes et résultats sur : Hive
 
-# Requêtes et résultats sur : HBase
 
-# Visualisation du dashboard : Grafana
+## Requêtes et résultats sur : HBase
+
+## Visualisation du dashboard : Grafana
 
 
 
