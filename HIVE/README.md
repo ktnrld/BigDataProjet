@@ -34,6 +34,12 @@ Puis, nous souhaitons mettre le tout sur hdfs. Nous créons donc un dossier proj
     Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet
 ```
 
+## 1. Création du HIVE DB :
+## 2. Création des Tables dans le format ORC :
+## 3. Requêttes simples sur chaque table :
+## 4. Partitions faite sur les tables :
+## 5. Reqûettes plus complexes sur les tables :
+
 Nous allons créer un sous dossier à ce projet :
 
 ```
