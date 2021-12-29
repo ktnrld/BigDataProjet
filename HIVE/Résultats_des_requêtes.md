@@ -1,5 +1,13 @@
 # REQUETES SUR LES TABLES HIVE
-
+Rappel : 
+```
+    use ece_2021_fall_app_1;
+```
+### ORDONNENCEMENT DES MOYENNES DE RATINGS
+```
+    SELECT * from ece_2021_fall_bda_${ece_group}.projet_kdr_title_ratings order by averagerating desc limit 5;
+```
+   
 ### DUREE DES FILMS SOUHAITES
 
 #### Nombre de films dont la durée est inférieur à 1 heures - FILM COURT
