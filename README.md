@@ -122,9 +122,9 @@ Nous ne pouvons pas ouvrir le dataset il faut se loger avec le plugin actif
 ![image](https://user-images.githubusercontent.com/71117842/147666527-26fc3c96-8503-41a0-8a51-16e3be04e9c0.png)
 
 ## 3. Configuration du CSV datasource en Grafana
-
-
-
+```diff
+https://docs.google.com/spreadsheets/d/1q2u8SYBjb3Q_uscxkK2UYAGE0LFKBfk-meOPO5w9EKY/edit?usp=sharing
+```
 ## 3. Ecriture des requêttes et creation du dashboard en Grafana
 
 
