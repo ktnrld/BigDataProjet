@@ -1,84 +1,26 @@
 # MISE EN PLACE DE HBase
 
-### Téléchargement des tables
-
-Nous avons télécharger sur IMDB les différentes tables concernant les films.
-
-### Local --> Edge
-
-Puis, nous souhaitons mettre ces fichiers sur edge, cela est faisable grâce à la commande ci-dessous :
-
+## Connection à Hbase
+Premièrement, nous nous rendons sur hbase.
 ```
-    scp chemin\title.tsv k.rouland-ece@edge-1.au.adaltas.cloud:
+    hbase shell
 ```
 
-Nous faisons cela pour chacune des tables qui nous interessent sur imdb, ici nous avons selectionné quatre tables :
+## Table Hbase
+Dans HBase les données sont organisées dans des tables. Les noms des tables sont des chaînes de caractères.
+Dans chaque table, les données sont organisées dans des lignes. Une ligne est identifiée par une clé unique (RowKey). La Rowkey n’a pas de type, elle est traitée comme un tableau d’octets. Les données au sein d’une ligne sont regroupées par column family. Chaque ligne de la table a les mêmes column families, qui peuvent être peuplées ou pas. Les column families sont définies à la création de la table dans HBase. Les noms des column families sont des chaînes de caractères.
 
-- movie
-- name
-- rating
-- title
+Nous cherchons à faire une table comme cela : 
+![hbase table](https://user-images.githubusercontent.com/71653765/147701808-205d6bad-df65-4fb4-b0c9-86b7f6c97676.png)
 
-### Connection
+## Création d'un fichier excel spécial
 
+
+## Hbase --> Hive
+Nous allons maintenant créer une table externe.
 ```
-    ssh k.rouland-ece@edge-1.au.adaltas.cloud
+    CREATE EXTERNAL TABLE hbase_table (A COMPLETER) 
+    STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:name")
+    TBLPROPERTIES ("hbase.table.name" = "client");
 ```
-
-### Edge --> HDFS
-
-Puis, nous souhaitons mettre le tout sur hdfs. Nous créons donc un dossier projet.
-
-```
-    Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet
-```
-
-Nous allons créer un sous dossier à ce projet :
-
-```
-    Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet/sousDirectory
-```
-
-Puis, nous allons faire une copie de edge sur hdfs :
-
-```
-    Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
-```
-
-### Création des tables Hive
-
-Nous allons donc créer 7 tables correspondant aux 7 fichiers sur HDFS, mais cette fois-ci sur Hive.
-Ces tables sont externes et elles sont créées afin que nous puissions les requêtés. Ces tables pointent sur le fichier où les données du fichier tsv sont.
-
-#### Names.basics
-
-```
-    CREATE EXTERNAL TABLE ece_2021_fall_app_1.k_rouland_ece_IMDB_name_basics
-    (
-        nconst STRING,
-        primaryName STRING,
-        birthYear INT,
-        deathYear INT,
-        primaryProfession STRING,
-        knownForTitles STRING
-    )
-    ROW FORMAT DELIMITED
-    FIELDS TERMINATED BY '\t'
-    LINES TERMINATED BY '\n'
-    STORED AS TEXTFILE
-    LOCATION '/education/ece_2021_fall_app_1/r.ould-kaci-ece/project/bdd/name.basics';
-```
-
-#### Affichage de name basics
-
-```
-    SELECT * FROM ece_2021_fall_app_1.k_rouland_ece_IMDB_name_basics  LIMIT 5;
-```
-
-Cette ligne de code permet d'avoir les 5 premiers résultats de la table pour vérifier qu’elle n’est pas vide.
-
-On créé le reste des fichiers de la même façon
-
-#### Création des tables en format orc
-
-Nous allons créer d'autres tables Hive mais cette fois-ci stocké sous le format orc, dans un autre fichier. On ingère le fichier csv des premières tables dans ces nouvelles tables.
