@@ -122,6 +122,12 @@ Nous avons choisi de partitionné selon le rating car nous avons précédemment 
 Grâce à la commande show partitions nous pouvons montrer cela : 
 ![showpartition](https://user-images.githubusercontent.com/71653765/147692934-7bc2f592-f8b5-4273-b9ff-1b3af788869c.png)
 
+Nous avons juger bon de partitionner la table title.basics. 
+Nous souhaitons partitionner selon : 
+- titletype	: the type/format of the title (e.g. movie, short, TV series, TV episode, video, etc)
+- isadult	String	0: non-adult title; 1: adult title
+- genres	Array	includes the genres associated with the title (which can be documentary, genre, action,…)
+-
 ! Note : nous n'avons pas montré toutes les tables car nous avons pour tous fonctionner de la même manière. Quand nous souhaitions partitionner nous vérifions en avance le nombre de partition que cela créerait, si celle-ci valait moins de 100, nous décidions de partitionné par cette colonne.
 
 
