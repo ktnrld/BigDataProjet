@@ -15,7 +15,7 @@ Résultat :
 #### Nombre de films dont la durée est inférieur à 1 heures - FILM COURT
 ```
     SELECT count(*) AS nbFilmCourt
-    FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+    FROM projet_kdr_title_basics
     WHERE runtimeminutes < 60;
 ```
 
