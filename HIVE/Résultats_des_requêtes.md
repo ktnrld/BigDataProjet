@@ -7,7 +7,9 @@ Rappel :
 ```
     SELECT * from ece_2021_fall_bda_${ece_group}.projet_kdr_title_ratings order by averagerating desc limit 5;
 ```
-   
+Résultat : 
+![c1](https://user-images.githubusercontent.com/71653765/147704353-49023874-d220-4193-8e21-df5ca8e1dbf7.png)
+
 ### DUREE DES FILMS SOUHAITES
 
 #### Nombre de films dont la durée est inférieur à 1 heures - FILM COURT
