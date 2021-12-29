@@ -29,7 +29,7 @@ Résultat :
 #### Nombre de films dont la durée est supérieur à 2 heures - FILM LONG
 ```
     SELECT count(*) AS nbFilmLong
-    FROM ece_2021_fall_bda_${ece_group}.projet_kdr_title_basics
+    FROM projet_kdr_title_basics
     WHERE runtimesminutes > 120;
 ```
 
