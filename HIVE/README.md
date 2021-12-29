@@ -45,6 +45,17 @@ Puis, nous allons faire une copie de edge sur hdfs :
     Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
 ```
 
+### Les commandes à faire 
+Pour aller sur Hive, nous tapons la commande ci-dessous : 
+```
+    beeline
+```
+
+Puis, nous avons besoin de faire : 
+```
+    use ece_2021_fall_app_1;
+```
+
 ### Création des tables Hive
 
 Nous allons donc créer 7 tables correspondant aux 7 fichiers sur HDFS, mais cette fois-ci sur Hive.
@@ -69,16 +80,42 @@ Ces tables sont externes et elles sont créées afin que nous puissions les requ
     LOCATION '/education/ece_2021_fall_app_1/r.ould-kaci-ece/project/bdd/name.basics';
 ```
 
-#### Affichage de name basics
+#### Affichage de ratings
 
 ```
-    SELECT * FROM ece_2021_fall_app_1.k_rouland_ece_IMDB_name_basics  LIMIT 5;
+     SELECT * FROM projet_kdr_title_ratings LIMIT 5;
 ```
 
 Cette ligne de code permet d'avoir les 5 premiers résultats de la table pour vérifier qu’elle n’est pas vide.
 
-On créé le reste des fichiers de la même façon
+On créé le reste des fichiers de la même façon.
+![image](https://user-images.githubusercontent.com/71653765/147692796-2f822b6c-2dc1-4123-a5cc-65ff8d09ee3d.png)
 
 #### Création des tables en format orc
 
 Nous allons créer d'autres tables Hive mais cette fois-ci stocké sous le format orc, dans un autre fichier. On ingère le fichier csv des premières tables dans ces nouvelles tables.
+```
+CREATE TABLE test2(tconst STRING, numvotes SMALLINT)
+PARTITIONED BY(averagerating FLOAT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+LINES TERMINATED BY '\n'
+TBLPROPERTIES('serialization.null.format'='', 'skip.header.line.count'='1');
+```
+
+Le format de fichier ORC (Optimized Row Columnar) offre un moyen très efficace de stocker des données Hive. Il a été conçu pour surmonter les limitations des autres formats de fichiers Hive. L'utilisation de fichiers ORC améliore les performances lorsque Hive lit, écrit et traite des données. Le fichier ORC peut contenir des index légers et des filtres de floraison.
+
+![image](https://user-images.githubusercontent.com/71653765/147692729-26ac4570-a0fa-480a-8868-94a20913af7b.png)
+
+### Affichage des tables et Partitions
+Nous souhaitons vérifier que nos tables ont bien été crée:
+https://github.com/ktnrld/BigDataProjet/issues/6#issue-1090672942
+Nous remarquons que nousa vons bien nos quatre tables avec leur quatre table orc.
+
+Nous avons aussi une table partitionné ( pour l'instant):
+![tablepartitionne](https://user-images.githubusercontent.com/71653765/147692620-45d53d43-cd80-4648-b72a-b35fd3360d93.png)
+
+Nous avons choisi de partitionné selon le rating car nous avons précédemment vu que cela nous permettait de diviser le fichier en moins de 100 fichiers contrairement aux deux autres colonnes, par exemple partitionné par l'id auraient été inneficaces car seul le meme nombre de fichier aurait été créer.
+
+
+
