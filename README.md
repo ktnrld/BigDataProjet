@@ -47,16 +47,21 @@ L’ensemble des données IMDb - Chaque ensemble de données est contenu dans un
 Regardons le schéma des tables :
 
 ## Schema of imdb_name.basics
-![namebas](https://user-images.githubusercontent.com/71653765/147696911-b1fcbed7-dfae-4a1a-9e9d-4a8998d293a4.png)
+
+![image](https://user-images.githubusercontent.com/71117842/147791412-45d41348-bd60-4367-92ca-f3d52afa745d.png)
+---
 
 ## Schema of imdb_title.basics
 ![basicstitle](https://user-images.githubusercontent.com/71117842/146517469-e59dd63f-39db-4fb3-9635-4ca02db1b606.png)
-
+---
 ## Schema of imdb_title.ratings
-![ratings](https://user-images.githubusercontent.com/71117842/146517470-2e0d22ba-de72-445f-a517-9a8b16976809.png)
 
+![image](https://user-images.githubusercontent.com/71117842/147791481-e9bf50e3-3bed-4432-bdaf-0d69a53b924d.png)
+---
 ## Schema of imdb_title.crew
-![titlecrew](https://user-images.githubusercontent.com/71117842/146517471-588ae764-f6e1-4778-a60b-3758fd6de7e9.png)
+
+![image](https://user-images.githubusercontent.com/71117842/147791580-f1d373b7-6aed-4334-9cb2-d3bf9605bc06.png)
+---
 
 ## Cas d'utilisation / Description du projet
 Nous sommes une plateforme qui permet de répondre aux requêtes des clients : par exemple, le client peut savoir rapidement, grâce à nos tables Hive partitionnées, quel est le type de film qui a la meilleur note. De plus, avec Grafana, nous proposons aux clients de visualiser différentes informations sous la forme de graphique ( dont les données sont directement issus de nos bases). Puis, nous avons ajouté l'aspect Hbase pour nous entrainer dans notre apprentissage.
