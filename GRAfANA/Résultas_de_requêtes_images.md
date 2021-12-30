@@ -45,6 +45,8 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 
 # title.ratings
 ### Visualisation de la table en Grafana
+![image](https://user-images.githubusercontent.com/71117842/147788915-936ef204-3777-4df4-abb8-b32340198dfa.png)
+
 ### Requêtes et résultats effectués
 
 
