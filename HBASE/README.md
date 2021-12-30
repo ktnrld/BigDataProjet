@@ -22,8 +22,10 @@ Nous allons prendre le modèle ci-dessous:
 ![image](https://user-images.githubusercontent.com/71653765/147788673-a2af5a55-7c28-4828-bebf-38c8e57da042.png)
 
 ```
-    create 'hbaseTable', 'tconst'
+    create 'ece_2021_fall_app_1:hbaseTable', 'tconst'
 ```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147789920-efccc926-f488-42c3-98ea-76753fd14e72.png)
 
 ## CSV --> Hbase
 Nous avons tout d'abord créer manuellement un fichier csv.
@@ -41,12 +43,12 @@ Vérifions qu'il est bien dans edge :
 
 ## Csv --> Hbase
 ```
-hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst hbaseTable /k.rouland-ece/hbase/hbaseexcel.csv
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst ece_2021_fall_app_1:hbasetable /k.rouland-ece/hbase/hbaseexcel.csv
 ```
 
 ## Vérification 
 ```
-    scan 'hbaseTable'
+    list
 ```
 ## Hbase --> Hive
 Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
