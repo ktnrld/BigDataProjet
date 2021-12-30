@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/71117842/147707307-2163329b-66d9-4892-b2c4-e532d2d85d96.png)
 
 Date d'échéance : 31/12/2021
-## Consignes 
+## <img src="https://img.icons8.com/cotton/40/000000/books--v2.png"/> Consignes 
 Le projet doit se concentrer sur les systèmes distribués Open Source.
 
 Un projet technique peut être l'installation d'une pile de technologies et/ou l'écriture de code pour traiter les données sur la pile. Il doit inclure l' implémentation : code, fichiers de configuration. Dans ce cas : Le code doit être hébergé sur un dépôt Git.
@@ -69,13 +69,6 @@ Nous sommes une plateforme qui permet de répondre aux requêtes des clients : p
 
 Toutes les étapes pour réaliser ce projet ont été définis dans les dossiers Hive, Hbase et Grafana. Vous y trouverez aussi nos requêtes et résultats.
 
-## Stack
-
-| Lib | Version |
-| ------ | ------ |
-| Grafana | 6.7.1 |
-| mongoose | 5.11.8 |
-
 ---
 ## 🏭 Prerequisites:
 
@@ -105,19 +98,19 @@ Puis, nous allons faire une copie de edge sur hdfs :
 ```diff
     Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
 ```
-## Requêtes et résultats sur : Hive
+## <img src="https://img.icons8.com/color/40/000000/program.png"/> Requêtes et résultats sur : Hive
 Aller voir le dossier HIVE : https://github.com/ktnrld/BigDataProjet/tree/main/HIVE
 Dans le dossier vous allez trouver :
 - Un README qui contient tous les informations techniques faites.
 - Un fichier qui contient les requêtes effectuées ainsi que son résultat en image.
 
-## Requêtes et résultats sur : HBase
+## <img src="https://img.icons8.com/color/40/000000/program.png"/> Requêtes et résultats sur : HBase
 Aller voir le dossier HBase : https://github.com/ktnrld/BigDataProjet/tree/main/HBASE
 Dans le dossier vous allez trouver :
 - Un README qui contient tous les informations techniques faites.
 - Un fichier qui contient les requêtes effectuées ainsi que son résultat en image.
 
-## Visualisation du dashboard : Grafana
+## <img src="https://img.icons8.com/color/40/000000/program.png"/> Visualisation du dashboard : Grafana
 Aller voir le dossier Grafana : https://github.com/ktnrld/BigDataProjet/tree/main/GRAfANA
 Dans le dossier vous allez trouver :
 - Un README qui contient tous les informations techniques faites.
