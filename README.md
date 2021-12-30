@@ -9,7 +9,7 @@ Un projet technique peut être l'installation d'une pile de technologies et/ou l
 Le code doit être documenté (README, commentaires en ligne).
 Le rapport de projet doit inclure une description claire du projet, les étapes de sa mise en œuvre et une liste des problèmes rencontrés.
 
-## Etudiants :
+## ![image](https://user-images.githubusercontent.com/71117842/147791970-0efa80ea-2284-40df-88a7-7169a20f723c.png) Etudiants :
 
 Apprentis Ing5 SI-01 :
 ```
