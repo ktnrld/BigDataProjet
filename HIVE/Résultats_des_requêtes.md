@@ -5,7 +5,7 @@ Rappel :
 ```
 ### ORDONNENCEMENT DES MOYENNES DE RATINGS
 ```
-    SELECT * from ece_2021_fall_bda_${ece_group}.projet_kdr_title_ratings order by averagerating desc limit 5;
+    SELECT * from projet_kdr_title_ratings order by averagerating desc limit 5;
 ```
 Résultat : 
 ![c1](https://user-images.githubusercontent.com/71653765/147704353-49023874-d220-4193-8e21-df5ca8e1dbf7.png)
@@ -60,8 +60,8 @@ Résultat :
       SELECT tconst
       FROM projet_kdr_title_basics
       WHERE array_contains(genres, 'Romance')
-    ) titles JOIN projet_kdr_title_ratings r
-    ON titles.tconst = r.tconst;
+    ) b JOIN projet_kdr_title_ratings r
+    ON b.tconst = r.tconst;
 ```
 Résultat : 
 ![image](https://user-images.githubusercontent.com/71653765/147706496-0606da8a-2eb8-425c-bd80-57de0d6423ca.png)
@@ -73,8 +73,8 @@ Résultat :
       SELECT tconst
       FROM projet_kdr_title_basics
       WHERE array_contains(genres, 'Drama')
-    ) titles JOIN projet_kdr_title_ratings r
-    ON titles.tconst = r.tconst;
+    ) b JOIN projet_kdr_title_ratings r
+    ON b.tconst = r.tconst;
 ```
 Résultat : 
 ![image](https://user-images.githubusercontent.com/71653765/147706666-c8748f92-04c7-4e0d-852f-4ba141cf0728.png)
@@ -91,7 +91,7 @@ Résultat :
       SELECT nconst
       FROM projet_kdr_name_basics
       WHERE primaryname = ${director}
-    ) n JOIN projet_kdr_title_crew c ON array_contains(c.directors, n.nconst)
+    ) nb JOIN projet_kdr_title_crew c ON array_contains(c.directors, nb.nconst)
     JOIN projet_kdr_title_ratings r ON c.tconst = r.tconst
     JOIN projet_kdr_title_basics t ON c.tconst = t.tconst
     ORDER BY r.averagerating DESC
