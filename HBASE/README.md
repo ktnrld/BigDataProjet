@@ -38,6 +38,11 @@ Mettons le tout sur edge :
 Vérifions qu'il est bien dans edge : 
 ![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/71653765/147788814-ac98bf99-e3b6-4075-899d-b487c1887311.png)
 
+## Csv --> Hbase
+```
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst hbaseTable /k.rouland-ece/hbase/hbaseexcel.csv
+```
+
 ## Hbase --> Hive
 Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
 ```
