@@ -130,7 +130,12 @@ Grâce à la commande show partitions nous pouvons montrer cela :
 
 Nous avons juger bon de partitionner la table title.basics. 
 Nous souhaitons partitionner selon isadult	(String	0: non-adult title; 1: adult title) afin de diviser le dataset en deux.
+![image](https://user-images.githubusercontent.com/71653765/147781213-8ca1d6b9-0d99-49e0-a442-2a00642ceb7d.png)
 
+Ci-dessus nous avons tapé : 
+```
+    show partitions projet_kdr_title_basics_part2;
+```
 
 ! Note : nous n'avons pas montré toutes les tables car nous avons pour tous fonctionner de la même manière. Quand nous souhaitions partitionner nous vérifions en avance le nombre de partition que cela créerait, si celle-ci valait moins de 100, nous décidions de partitionné par cette colonne.
 
