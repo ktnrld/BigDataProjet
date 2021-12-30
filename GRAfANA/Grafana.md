@@ -1,4 +1,4 @@
-# GRAFANA
+# GRAFANA SANS PASSER PAR DOCKER
 
 ## Pourquoi grafana
 Grafana est un logiciel libre sous licence GNU Affero General Public License Version 3 qui permet la visualisation de données. Il permet de réaliser des tableaux de bord et des graphiques depuis plusieurs sources dont des bases de données temporelles comme Graphite, InfluxDB et OpenTSDB.
@@ -29,3 +29,6 @@ Nous mettons ensuite nos tables qui sont conservés en local.
 ## Création d'un dashboard
 Nous nous rendons sur l'icone création d'un dashboard.
 ![dashboard](https://user-images.githubusercontent.com/71653765/147604550-8a345bf7-73ae-499d-b2d1-0ede9fd80358.png)
+
+## ...
+Puis, rendez-vous dans le readme et suivez la même procédure !
