@@ -49,6 +49,8 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 
 ### Requêtes et résultats effectués
 ![image](https://user-images.githubusercontent.com/71117842/147789218-0ea3b0ed-1753-4c08-a9f1-41cf5c0925b8.png)
+![image](https://user-images.githubusercontent.com/71117842/147790172-3e718fe5-4539-46c8-a165-425a0a941ded.png)
+![image](https://user-images.githubusercontent.com/71117842/147790361-9768d8da-b4f0-49b1-8a62-b76ee3d8b8a2.png)
 
 
 
