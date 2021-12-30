@@ -129,6 +129,7 @@ Exemple :
 Nous avons choisi de partitionné selon le rating car nous avons précédemment vu que cela nous permettait de diviser le fichier en moins de 100 fichiers contrairement aux deux autres colonnes, par exemple partitionné par l'id auraient été inneficaces car seul le meme nombre de fichier aurait été créer.
 
 Grâce à la commande show partitions nous pouvons montrer cela : 
+
 ![showpartition](https://user-images.githubusercontent.com/71653765/147692934-7bc2f592-f8b5-4273-b9ff-1b3af788869c.png)
 
 Nous avons juger bon de partitionner la table title.basics. 
