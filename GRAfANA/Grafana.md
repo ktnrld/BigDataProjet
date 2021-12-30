@@ -20,7 +20,9 @@ Nous avons entré admin admin, puis nous avons changé notre mot de passe.
 
 ## Ajout une source de donnée
 ![source](https://user-images.githubusercontent.com/71653765/147604145-9fcb9f55-685a-47ed-b090-8e15cf253edd.png)
+
 On télécharge le plug-in csv afin de pouvoir y mettre nos tables.
+
 ![csv](https://user-images.githubusercontent.com/71653765/147604302-f73fe90f-6e91-4e76-a467-a6e821b0e5c6.png)
 
 Nous mettons ensuite nos tables qui sont conservés en local.
@@ -32,4 +34,4 @@ Nous nous rendons sur l'icone création d'un dashboard.
 ![dashboard](https://user-images.githubusercontent.com/71653765/147604550-8a345bf7-73ae-499d-b2d1-0ede9fd80358.png)
 
 ## ...
-Puis, rendez-vous dans le readme et suivez la même procédure !
+Puis, rendez-vous dans le readme et suivez la même procédure si vous souhaitez connecter Grafana avec GOOGLESHEET !
