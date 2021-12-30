@@ -9,5 +9,6 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 ![image](https://user-images.githubusercontent.com/71117842/147776468-673026ad-78f0-4533-b874-a866783f1bf6.png)
 ![image](https://user-images.githubusercontent.com/71117842/147777284-8969c41f-4208-48ea-ba89-41c0e7e3f477.png)
 ![image](https://user-images.githubusercontent.com/71117842/147778148-34bafaf2-5c76-49e1-93f9-6adab6053701.png)
-![image](https://user-images.githubusercontent.com/71117842/147778445-f683ee45-4336-4ced-87ea-b8cd2d2bd669.png)
+
+![image](https://user-images.githubusercontent.com/71117842/147778540-d164a5c4-b5dc-4a30-a673-3eac68c5158a.png)
 
