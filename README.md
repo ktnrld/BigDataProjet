@@ -117,4 +117,9 @@ Dans le dossier vous allez trouver :
 - Un README qui contient tous les informations techniques faites.
 - Un fichier qui contient les requêtes effectuées ainsi que son résultat en image.
 
+## Difficultés rencontrées
+Pour Hive, nous n'arrivions pas à partitionner la table car nous ne trouvions pas la "formulation correcte". Cependant, nous avons finalement réussi à partitionner deux tables selon deux éléments pertinents. 
 
+Pour Hbase, le plus compliqué a été de réfléchir à comment créer une seule table alors que nous en avons plusieurs.
+
+Pour Grafana, nous avions rencontré un problème lors de l'ajout de donnée, nous supposons donc que le problème était lié à la trop grande quantité de donnée que nous voulions ingérer d'un seul coup.
