@@ -55,11 +55,14 @@ ou
 ## Csv --> Hbase
 Comme nous pouvons le voir ci-dessous, la table est vide, nous allons donc la remplir grâce à :
 ```
-hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst ece_2021_fall_app_1:hbasetable /education/ece_2021_fall_app_1/k.rouland-ece/hbase/hbaseexcel.csv
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst:averageRating,tconst:numVotes,tconst:titleType,tconst:primaryTitle,tconst:isAdult,tconst:startYear,tconst:runtimeMinute,tconst:genres,tconst:writers ece_2021_fall_app_1:hbaseTable /education/ece_2021_fall_app_1/k.rouland-ece/hbaseTable/hbaseexcel.csv
 ```
 
 Nous mettons donc bien les données :
 ![image](https://user-images.githubusercontent.com/71653765/147791446-84c26fa3-e359-4d82-bdc2-2559e0b7592f.png)
+
+Vérifions:
+![image](https://user-images.githubusercontent.com/71653765/147792449-95529167-7753-4e68-9c08-d7a57b8fa465.png)
 
 ## Hbase --> Hive
 Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
