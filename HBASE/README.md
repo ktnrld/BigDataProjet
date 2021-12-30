@@ -25,19 +25,26 @@ Nous allons prendre le modèle ci-dessous:
     create 'hbaseTable', 'tconst'
 ```
 
-## Hbase --> Hive
-Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
-```
-    CREATE EXTERNAL TABLE hbase_table hbaseTable
-    STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
-    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":tconst,cf:nom de la column family")
-    TBLPROPERTIES ("hbase.table.name" = "client");
-```
-
-
 ## CSV --> Hbase
 Nous avons tout d'abord créer manuellement un fichier csv.
 ![image](https://user-images.githubusercontent.com/71653765/147788860-cf26e5bb-7e24-4c16-9378-348204e4ae1a.png)
 
+Vu du fichier excel : 
+![image](https://user-images.githubusercontent.com/71653765/147789080-35789b58-334a-4e25-b25c-623739550926.png)
+
+Mettons le tout sur edge :
+![image](https://user-images.githubusercontent.com/71653765/147789131-f96df1d7-f270-466d-9f10-fed857bb6ff4.png)
+
 Vérifions qu'il est bien dans edge : 
 ![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/71653765/147788814-ac98bf99-e3b6-4075-899d-b487c1887311.png)
+
+## Hbase --> Hive
+Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
+```
+    CREATE EXTERNAL TABLE hbase_table hbaseTableOnHive
+    STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":tconst,cf:nom de la column family")
+    TBLPROPERTIES ("hbaseTable" = "client");
+```
+
+
