@@ -4,7 +4,7 @@ Nous avons pris connaissance du logiciel grafana, et nous avons commencé à tes
 Tout d'abord, nous avons affiché nos 4 tables (reduites parce que avec la version free de grafana tout le dataset de IMDB était trop loud). Nous avons opté pour réduire les tables à 10000 lignes.
 
 Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détails les résultats:
-# names.basics
+# <img src="https://img.icons8.com/fluency/40/000000/documentary.png"/> names.basics
 ### Visualisation de la table en Grafana
 ![image](https://user-images.githubusercontent.com/71117842/147782243-d5b21b7d-e1c6-4b4b-851d-8adb5c1f34b2.png)
 
@@ -20,7 +20,7 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 ![image](https://user-images.githubusercontent.com/71117842/147777284-8969c41f-4208-48ea-ba89-41c0e7e3f477.png)
 
 ---
-# title.crew
+# <img src="https://img.icons8.com/fluency/40/000000/documentary.png"/> title.crew
 ### Visualisation de la table en Grafana
 ![image](https://user-images.githubusercontent.com/71117842/147785688-d061b8d2-fb4b-44c3-8afc-309753db21ab.png)
 
@@ -34,7 +34,7 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 
 ---
 
-# title.principals
+# <img src="https://img.icons8.com/fluency/40/000000/documentary.png"/> title.principals
 ### Visualisation de la table en Grafana
 ![image](https://user-images.githubusercontent.com/71117842/147790803-aac61799-f0b0-45e6-b5fa-b0248d184732.png)
 
@@ -51,7 +51,7 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 ![image](https://user-images.githubusercontent.com/71117842/147707405-e2949695-682f-4758-a4a5-7fc6414d3a28.png)
 ---
 
-# title.ratings
+# <img src="https://img.icons8.com/fluency/40/000000/documentary.png"/> title.ratings
 ### Visualisation de la table en Grafana
 ![image](https://user-images.githubusercontent.com/71117842/147788915-936ef204-3777-4df4-abb8-b32340198dfa.png)
 
