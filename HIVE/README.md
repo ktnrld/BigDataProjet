@@ -13,7 +13,7 @@ Puis, nous souhaitons mettre ces fichiers sur edge, cela est faisable grâce à 
     scp chemin\title.tsv k.rouland-ece@edge-1.au.adaltas.cloud:
 ```
 
-Nous faisons cela pour chacune des tables qui nous interessent sur imdb, ici nous avons selectionné quatre tables :
+Nous faisons cela pour chacune des tables qui nous intéressent sur imdb, ici nous avons selectionné quatre tables :
 
 - movie
 - name
@@ -33,12 +33,6 @@ Puis, nous souhaitons mettre le tout sur hdfs. Nous créons donc un dossier proj
 ```
     Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet
 ```
-
-## 1. Création du HIVE DB :
-## 2. Création des Tables dans le format ORC :
-## 3. Requêttes simples sur chaque table :
-## 4. Partitions faite sur les tables :
-## 5. Reqûettes plus complexes sur les tables :
 
 Nous allons créer un sous dossier à ce projet :
 
@@ -104,15 +98,7 @@ On créé le reste des fichiers de la même façon.
 
 #### Création des tables en format orc
 
-Nous allons créer d'autres tables Hive mais cette fois-ci stocké sous le format orc, dans un autre fichier. On ingère le fichier csv des premières tables dans ces nouvelles tables.
-```
-CREATE TABLE test2(tconst STRING, numvotes SMALLINT)
-PARTITIONED BY(averagerating FLOAT)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY '\t'
-LINES TERMINATED BY '\n'
-TBLPROPERTIES('serialization.null.format'='', 'skip.header.line.count'='1');
-```
+Nous allons créer d'autres tables Hive mais cette fois-ci stockées sous le format orc, dans un autre fichier. Pour cela, nous faisons pareil que ci-dessus, sauf que nous utilisons la commande STORED AS ORC. On ingère le fichier csv des premières tables dans ces nouvelles tables.
 
 Le format de fichier ORC (Optimized Row Columnar) offre un moyen très efficace de stocker des données Hive. Il a été conçu pour surmonter les limitations des autres formats de fichiers Hive. L'utilisation de fichiers ORC améliore les performances lorsque Hive lit, écrit et traite des données. Le fichier ORC peut contenir des index légers et des filtres de floraison.
 
@@ -123,22 +109,29 @@ Nous souhaitons vérifier que nos tables ont bien été crée:
 
 ![show tables 2](https://user-images.githubusercontent.com/71653765/147694956-06583a4f-74c1-4034-9ee1-cca006282a0a.png)
 
-Nous remarquons que nousa vons bien nos quatre tables avec leur quatre table orc.
+Nous remarquons que nous avons bien nos quatre tables avec leurs quatre tables orc.
 
-Nous avons aussi quatre table partitionnées, étudions celle de rating : 
+Nous avons aussi deux table partitionnées, étudions celle de rating : 
 ![tablepartitionne](https://user-images.githubusercontent.com/71653765/147692620-45d53d43-cd80-4648-b72a-b35fd3360d93.png)
 
+Ci-dessous un exemple de commande pour partitionner : 
+```
+CREATE TABLE test_partition(tconst STRING, numvotes SMALLINT)
+PARTITIONED BY(averagerating FLOAT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+LINES TERMINATED BY '\n'
+TBLPROPERTIES('serialization.null.format'='', 'skip.header.line.count'='1');
+```
 Nous avons choisi de partitionné selon le rating car nous avons précédemment vu que cela nous permettait de diviser le fichier en moins de 100 fichiers contrairement aux deux autres colonnes, par exemple partitionné par l'id auraient été inneficaces car seul le meme nombre de fichier aurait été créer.
 
 Grâce à la commande show partitions nous pouvons montrer cela : 
 ![showpartition](https://user-images.githubusercontent.com/71653765/147692934-7bc2f592-f8b5-4273-b9ff-1b3af788869c.png)
 
 Nous avons juger bon de partitionner la table title.basics. 
-Nous souhaitons partitionner selon : 
-- titletype	: the type/format of the title (e.g. movie, short, TV series, TV episode, video, etc)
-- isadult	String	0: non-adult title; 1: adult title
-- genres	Array	includes the genres associated with the title (which can be documentary, genre, action,…)
--
+Nous souhaitons partitionner selon isadult	(String	0: non-adult title; 1: adult title) afin de diviser le dataset en deux.
+
+
 ! Note : nous n'avons pas montré toutes les tables car nous avons pour tous fonctionner de la même manière. Quand nous souhaitions partitionner nous vérifions en avance le nombre de partition que cela créerait, si celle-ci valait moins de 100, nous décidions de partitionné par cette colonne.
 
 
