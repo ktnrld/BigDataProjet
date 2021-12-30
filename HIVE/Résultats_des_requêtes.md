@@ -20,6 +20,7 @@ Résultat :
 ```
 Résultat : 
 ![image](https://user-images.githubusercontent.com/71653765/147705287-09c4c7d3-5737-491f-987e-b79c6eb01993.png)
+
 #### Nombre de films dont la durée est comprise entre 1 et 2 heures - FILM NORMAL
 ```
     SELECT count(*) AS nbFilmNormal
@@ -37,21 +38,47 @@ Résultat :
 ```
 Résultat : 
 ![image](https://user-images.githubusercontent.com/71653765/147705412-35fb113f-562b-4ed5-b551-82d05e98d785.png)
-### FILM ROMANTIQUE - DUREE MOYENNE
-#### Durée moyenne des films romantiques.
-```
-    SELECT avg(runtimeminutes) AS DureeMoyenneFilmRomantique
-    FROM projet_kdr_title_basics
-    WHERE genres IN ('Romance');
-```
 
-### FILM DRAMATIQUE - DUREE MOYENNE
-#### Durée moyenne des films dramatiques.
+### Les plus longs
+#### Noms des 10 films les plus longs.
+```
+    SELECT originalTitle, runtimeminutes
+    FROM  projet_kdr_title_basics
+    WHERE titletype LIKE 'movie'
+    ORDER BY runtimeminutes DESC
+    LIMIT 10;
+```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147780083-f3126d9d-2105-4a91-b9e8-a0c81388702b.png)
+#### Noms des 10 shorts les plus longs
+ ```
+SELECT originalTitle, runtimeminutes
+FROM  projet_kdr_title_basics
+WHERE titletype LIKE 'short'
+ORDER BY runtimeminutes DESC
+LIMIT 10;
+ ```
+Résultat :
+![image](https://user-images.githubusercontent.com/71653765/147780266-c4e2e225-63a6-41ad-afc2-3b9ec3f86154.png)
+### FILM ROMANTIQUE - DUREE MOYENNE
+#### Durée moyenne des films débutant par romance.
 ```
     SELECT avg(runtimeminutes) AS DureeMoyenneFilmDramatique
     FROM projet_kdr_title_basics
-    WHERE genre IN ('Drama');
+    WHERE  primarytitle '(^| )[Rr]omance';
 ```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147779662-2c033990-bae9-4400-8d58-b9ad5e7dd590.png)
+
+### Film Adulte
+#### Comptons le nombre de film pour adulte
+```
+SELECT count(*) AS NombreFilmAdulte
+FROM projet_kdr_title_basics 
+WHERE titletype LIKE 'movie' AND isAdult = 1;
+```
+Résultat : 
+![image](https://user-images.githubusercontent.com/71653765/147780732-f6b8eda5-8405-4b1f-90f5-e26cd027c15b.png)
 ### Note moyenne d'un genre de film
 #### Note moyenne des films romantique
 ```
@@ -79,6 +106,17 @@ Résultat :
 Résultat : 
 ![image](https://user-images.githubusercontent.com/71653765/147706666-c8748f92-04c7-4e0d-852f-4ba141cf0728.png)
 
+### NUMVOTES
+#### Les films qui ont reçu le plus de NumVotes.
+```
+    SELECT numVotes, originalTitle
+    FROM projet_kdr_title_ratings JOIN projet_kdr_title_basics USING (tconst)
+    WHERE titletype LIKE 'movie'
+    ORDER BY numVotes DESC
+    LIMIT 10;
+```
+Résultat :
+![image](https://user-images.githubusercontent.com/71653765/147780988-21986b26-794b-4733-96fc-f7838896ac25.png)
 
 ### Requête demandé par notre professeur
 #### Top 5 des films qui ont été réalisés par Tarantino
