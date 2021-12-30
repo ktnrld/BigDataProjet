@@ -1,4 +1,4 @@
-# Projet BigData : Gestion des données de la base IMDB 
+# <img src="https://img.icons8.com/fluency/40/000000/futurama-bender.png"/> Projet BigData : Gestion des données de la base IMDB <img src="https://img.icons8.com/fluency/40/000000/futurama-bender.png"/> 
 ![image](https://user-images.githubusercontent.com/71117842/147707307-2163329b-66d9-4892-b2c4-e532d2d85d96.png)
 
 Date d'échéance : 31/12/2021
