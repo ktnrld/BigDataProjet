@@ -71,7 +71,7 @@ Toutes les étapes pour réaliser ce projet ont été définis dans les dossiers
 | mongoose | 5.11.8 |
 
 ---
-🏭 ## Prerequisites:
+## 🏭 Prerequisites:
 
 ## Setting Up avec le cluster d'Adaltas
 
