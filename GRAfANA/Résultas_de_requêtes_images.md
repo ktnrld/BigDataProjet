@@ -19,7 +19,10 @@ Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détai
 ![image](https://user-images.githubusercontent.com/71117842/147777284-8969c41f-4208-48ea-ba89-41c0e7e3f477.png)
 # title.crew
 ### Visualisation de la table en Grafana
+![image](https://user-images.githubusercontent.com/71117842/147785688-d061b8d2-fb4b-44c3-8afc-309753db21ab.png)
+
 ### Requêtes et résultats effectués
+![image](https://user-images.githubusercontent.com/71117842/147785676-1dbda04f-06da-4758-b0d8-5d5b56414bcd.png)
 
 # title.principals
 ### Visualisation de la table en Grafana
