@@ -1,24 +1,24 @@
 # RESULTATS DE REQUETTES. 
 Nous avons testé les deux configurations avec grafana à savoir la connection avec le plugin GoogleSheet et le plugin CSV.
 Nous avons pris connaissance du logiciel grafana, et nous avons commencé à tester nos tables.
-Tout d'abord, nous avons affiché nos 4 tables (reduites parce ue avec la version free de grafana tout le dataset de IMDB était trop loud). Nous avons opté pour réduire les tables à 10000 lignes.
+Tout d'abord, nous avons affiché nos 4 tables (reduites parce que avec la version free de grafana tout le dataset de IMDB était trop loud). Nous avons opté pour réduire les tables à 10000 lignes.
 
-Ensuite nos avons lancé des reqûettes sur les tables. Regardons plus en détail les résults:
+Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détails les résultats:
 # title.basics
 ### Visualisation de la table en Grafana
-### Requêttes et résultas effectués
+### Requêtes et résultats effectués
 
 # title.crew
 ### Visualisation de la table en Grafana
-### Requêttes et résultas effectués
+### Requêtes et résultats effectués
 
 # title.principals
 ### Visualisation de la table en Grafana
-### Requêttes et résultas effectués
+### Requêtes et résultats effectués
 
 # title.ratings
 ### Visualisation de la table en Grafana
-### Requêttes et résultas effectués
+### Requêtes et résultats effectués
 
 ### La réponse au pourcentage de film dans la base de donnée de IMDB est 33% 
 Il s'agit d'un des graphiques que nous pouvons obtenir, il permet de répondre à la question : quel est la proportion de type de contenu que vous proposez ? 
