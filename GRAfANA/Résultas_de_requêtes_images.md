@@ -31,6 +31,8 @@ Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détai
 
 # title.principals
 ### Visualisation de la table en Grafana
+![image](https://user-images.githubusercontent.com/71117842/147790803-aac61799-f0b0-45e6-b5fa-b0248d184732.png)
+
 ### Requêtes et résultats effectués
 
 ![image](https://user-images.githubusercontent.com/71117842/147778148-34bafaf2-5c76-49e1-93f9-6adab6053701.png)
@@ -48,8 +50,11 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 ![image](https://user-images.githubusercontent.com/71117842/147788915-936ef204-3777-4df4-abb8-b32340198dfa.png)
 
 ### Requêtes et résultats effectués
+### La moyenne les plus hautes avec les votes effectués
 ![image](https://user-images.githubusercontent.com/71117842/147789218-0ea3b0ed-1753-4c08-a9f1-41cf5c0925b8.png)
+### Savoir le maximum de votes effectués
 ![image](https://user-images.githubusercontent.com/71117842/147790172-3e718fe5-4539-46c8-a165-425a0a941ded.png)
+### Savoir la moyenne de rating les plus votés par les utilisateurs
 ![image](https://user-images.githubusercontent.com/71117842/147790361-9768d8da-b4f0-49b1-8a62-b76ee3d8b8a2.png)
 
 
