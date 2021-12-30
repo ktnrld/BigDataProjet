@@ -43,13 +43,16 @@ Vérifions qu'il est bien dans edge :
 hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst hbaseTable /k.rouland-ece/hbase/hbaseexcel.csv
 ```
 
+## Vérification 
+```
+    scan 'hbaseTable'
+```
 ## Hbase --> Hive
 Nous allons maintenant créer une table externe sur Hive qui va correspondre aux données qui sont sur Hbase, nous précisions que les données ne sont pas sur edge mais sur hbase et finalement, nous réalisons une sorte de correspondance entre la table Hive et les données de Hbase.
 ```
-    CREATE EXTERNAL TABLE hbase_table hbaseTableOnHive
+    CREATE EXTERNAL TABLE hbaseTableOnHive (tconst string)
     STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
-    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":tconst,cf:nom de la column family")
-    TBLPROPERTIES ("hbaseTable" = "client");
+    WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:"tconst")
+    TBLPROPERTIES ("hbase.table.name" = "hbaseTable");
 ```
-
 
