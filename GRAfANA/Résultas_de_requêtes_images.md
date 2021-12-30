@@ -1,4 +1,4 @@
-# RESULTATS DE REQUETTES. 
+# RESULTATS DE REQUETES. 
 Nous avons testé les deux configurations avec grafana à savoir la connection avec le plugin GoogleSheet et le plugin CSV.
 Nous avons pris connaissance du logiciel grafana, et nous avons commencé à tester nos tables.
 Tout d'abord, nous avons affiché nos 4 tables (reduites parce que avec la version free de grafana tout le dataset de IMDB était trop loud). Nous avons opté pour réduire les tables à 10000 lignes.
