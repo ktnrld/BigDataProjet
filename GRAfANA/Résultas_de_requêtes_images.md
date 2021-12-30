@@ -4,6 +4,21 @@ Nous avons pris connaissance du logiciel grafana, et nous avons commencé à tes
 Tout d'abord, nous avons affiché nos 4 tables (reduites parce ue avec la version free de grafana tout le dataset de IMDB était trop loud). Nous avons opté pour réduire les tables à 10000 lignes.
 
 Ensuite nos avons lancé des reqûettes sur les tables. Regardons plus en détail les résults:
+# title.basics
+### Visualisation de la table en Grafana
+### Requêttes et résultas effectués
+
+# title.crew
+### Visualisation de la table en Grafana
+### Requêttes et résultas effectués
+
+# title.principals
+### Visualisation de la table en Grafana
+### Requêttes et résultas effectués
+
+# title.ratings
+### Visualisation de la table en Grafana
+### Requêttes et résultas effectués
 
 ### La réponse au pourcentage de film dans la base de donnée de IMDB est 33% 
 Il s'agit d'un des graphiques que nous pouvons obtenir, il permet de répondre à la question : quel est la proportion de type de contenu que vous proposez ? 
