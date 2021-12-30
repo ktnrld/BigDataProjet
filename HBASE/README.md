@@ -27,6 +27,7 @@ Nous allons prendre le modèle ci-dessous:
 
 ## CSV --> Hbase
 Nous avons tout d'abord créer manuellement un fichier csv.
+Nous avons vérifié que les tconst correspondaient afin de tout mettre sur la même ligne.
 
 Vu du fichier excel : 
 ![image](https://user-images.githubusercontent.com/71653765/147789080-35789b58-334a-4e25-b25c-623739550926.png)
