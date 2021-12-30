@@ -27,7 +27,7 @@ Apprentis Ing5 SI-01 :
 
 ![image](https://user-images.githubusercontent.com/71117842/147662245-1bc3959e-7cdb-4209-90f3-155826a96a57.png)
 
-# Informations sur le projet
+# 🎯 Informations sur le projet
 
 Le projet cherche à exploiter l’ensemble des données de IMDb. Les données de ces fichiers sont accessibles et peuvent être consultés ainsi que téléchargés à partir de https://datasets.imdbws.com/. A savoir que les données sont actualisées quotidiennement.
 
