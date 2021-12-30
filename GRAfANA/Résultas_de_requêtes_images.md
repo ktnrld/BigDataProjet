@@ -7,3 +7,4 @@ Ci-dessous, le résultat obtenu après avoir paramétré Grafana afin de joindre
 ![image](https://user-images.githubusercontent.com/71117842/147770387-f4bc69c3-3b9f-49e4-b947-4afb2503523f.png)
 ![image](https://user-images.githubusercontent.com/71117842/147771603-96f8b0bb-007f-4710-8463-bbb956e8a3d3.png)
 ![image](https://user-images.githubusercontent.com/71117842/147776468-673026ad-78f0-4533-b874-a866783f1bf6.png)
+![image](https://user-images.githubusercontent.com/71117842/147777284-8969c41f-4208-48ea-ba89-41c0e7e3f477.png)
