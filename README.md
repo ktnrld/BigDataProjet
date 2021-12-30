@@ -123,3 +123,5 @@ Pour Hive, nous n'arrivions pas à partitionner la table car nous ne trouvions p
 Pour Hbase, le plus compliqué a été de réfléchir à comment créer une seule table alors que nous en avons plusieurs.
 
 Pour Grafana, nous avions rencontré un problème lors de l'ajout de donnée, nous supposons donc que le problème était lié à la trop grande quantité de donnée que nous voulions ingérer d'un seul coup.
+
+## 🚀 Pour aller plus loin 
