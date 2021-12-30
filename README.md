@@ -52,7 +52,8 @@ Regardons le schéma des tables :
 ---
 
 ## Schema of imdb_title.basics
-![basicstitle](https://user-images.githubusercontent.com/71117842/146517469-e59dd63f-39db-4fb3-9635-4ca02db1b606.png)
+
+![image](https://user-images.githubusercontent.com/71117842/147791682-9ad802f8-32cc-461c-bf28-1ba6d72fee3b.png)
 ---
 ## Schema of imdb_title.ratings
 
