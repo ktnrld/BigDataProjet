@@ -52,10 +52,10 @@ Regardons le schéma des tables :
 ## Schema of imdb_title.basics
 ![basicstitle](https://user-images.githubusercontent.com/71117842/146517469-e59dd63f-39db-4fb3-9635-4ca02db1b606.png)
 
-## Schema of imdb_title.crew
+## Schema of imdb_title.ratings
 ![ratings](https://user-images.githubusercontent.com/71117842/146517470-2e0d22ba-de72-445f-a517-9a8b16976809.png)
 
-## Schema of imdb_title.ratings
+## Schema of imdb_title.crew
 ![titlecrew](https://user-images.githubusercontent.com/71117842/146517471-588ae764-f6e1-4778-a60b-3758fd6de7e9.png)
 
 ## Cas d'utilisation / Description du projet
