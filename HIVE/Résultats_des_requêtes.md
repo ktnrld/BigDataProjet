@@ -42,7 +42,7 @@ Résultat :
 ```
     SELECT avg(runtimeminutes) AS DureeMoyenneFilmRomantique
     FROM projet_kdr_title_basics
-    WHERE genres == "Romance";
+    WHERE genres = 'Romance';
 ```
 
 ### FILM DRAMATIQUE - DUREE MOYENNE
@@ -50,9 +50,9 @@ Résultat :
 ```
     SELECT avg(runtimeminutes) AS DureeMoyenneFilmDramatique
     FROM projet_kdr_title_basics
-    WHERE genre == "Drama";
+    WHERE genre = 'Drama';
 ```
-### MEILLEUR FILM ROMANTIQUE
+### Note moyenne d'un genre de film
 #### Note moyenne des films romantique
 ```
     SELECT avg(averagerating) AS noteMoyFilmRomantique
