@@ -22,7 +22,12 @@ Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détai
 ![image](https://user-images.githubusercontent.com/71117842/147785688-d061b8d2-fb4b-44c3-8afc-309753db21ab.png)
 
 ### Requêtes et résultats effectués
+
+#### Combien d'écriteurs il y en a ?
 ![image](https://user-images.githubusercontent.com/71117842/147785676-1dbda04f-06da-4758-b0d8-5d5b56414bcd.png)
+
+#### combien des films ont réalisé chaque écrivain?
+![image](https://user-images.githubusercontent.com/71117842/147787100-e2e85ece-e9bb-4f50-ad88-89894380e33d.png)
 
 # title.principals
 ### Visualisation de la table en Grafana
