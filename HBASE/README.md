@@ -55,7 +55,7 @@ ou
 ## Csv --> Hbase
 Comme nous pouvons le voir ci-dessous, la table est vide, nous allons donc la remplir grâce à :
 ```
-hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst ece_2021_fall_app_1:hbasetable /k.rouland-ece/hbase/hbaseexcel.csv
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=';' -Dimporttsv.columns=HBASE_ROW_KEY,tconst ece_2021_fall_app_1:hbasetable /education/ece_2021_fall_app_1/k.rouland-ece/hbase/hbaseexcel.csv
 ```
 
 Nous mettons donc bien les données :
