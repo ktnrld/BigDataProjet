@@ -93,3 +93,11 @@ Utiliser le filtre de temps - la première colonne sera filtrée par temps, vous
 ## 3. Ecriture des requêtes et création du dashboard en Grafana
 
 ![image](https://user-images.githubusercontent.com/71117842/147689504-7b05dbf3-5a03-4b56-92ee-f2ed31b04a85.png)
+
+## Graphique
+Par exemple, un client souhaite savoir le pourcentage de film contenu dans la base de donnée IMBD.
+
+Nous vous invitons à vous rendre à l'adresse ci-dessous pour avoir la réponse :
+https://github.com/ktnrld/BigDataProjet/blob/main/GRAfANA/R%C3%A9sultas_de_requ%C3%AAtes_images.md
+
+
