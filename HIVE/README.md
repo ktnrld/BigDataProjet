@@ -46,6 +46,7 @@ Puis, nous allons faire une copie de edge sur hdfs :
     Hdfs dfs -copyFromLocal sousDirectory/fichier /education/ece_2021_fall_app_1/nomprojet
 ```
 
+Notre projet s'appelle : projet_kdr
 ### Les commandes à faire 
 Pour aller sur Hive, nous tapons la commande ci-dessous : 
 ```
@@ -61,6 +62,7 @@ En plus, nous pouvons ajouter la commande ci-dessous :
 ```
     SET hivevar:ece_group=1;
 ```
+Nous pouvons aussi précisé le nom d'utilisateur par exemple en reprenant la commande ci-dessus.
 ### Création des tables Hive
 
 Nous allons donc créer 7 tables correspondant aux 7 fichiers sur HDFS, mais cette fois-ci sur Hive.
