@@ -8,9 +8,6 @@ Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détai
 ### Visualisation de la table en Grafana
 ![image](https://user-images.githubusercontent.com/71117842/147782243-d5b21b7d-e1c6-4b4b-851d-8adb5c1f34b2.png)
 
-### Visualisation de la table en Grafana
-![image](https://user-images.githubusercontent.com/71117842/147785688-d061b8d2-fb4b-44c3-8afc-309753db21ab.png)
-
 ### Requêtes effectués et résultats 
 
 #### Combien d'acteurs et actrices y-a-t-il?
@@ -21,7 +18,8 @@ Ensuite nous avons lancé des requêtes sur les tables. Regardons plus en détai
 
 ---
 # <img src="https://img.icons8.com/fluency/40/000000/documentary.png"/> title.crew
-
+### Visualisation de la table en Grafana
+![image](https://user-images.githubusercontent.com/71117842/147785688-d061b8d2-fb4b-44c3-8afc-309753db21ab.png)
 #### Combien de writters y-a-t-il?
 ![image](https://user-images.githubusercontent.com/71117842/147785676-1dbda04f-06da-4758-b0d8-5d5b56414bcd.png)
 
