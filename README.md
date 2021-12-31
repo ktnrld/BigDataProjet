@@ -85,7 +85,6 @@ Toutes les étapes pour réaliser ce projet ont été définis dans les dossiers
 
 Nous souhaitons faire une application en nous mettons dans la peau d'un utilisateur sur le site de IMDB, pour cela nous allons créer des tables sur HDFS ensuite nous allons faire des requêtes sur HIVE et sur HBASE.
 
-
 Vous pouvez vérifier la création des répertoires dans HDFS : 
 ```diff
     Hdfs dfs -mkdir /education/ece_2021_fall_app_1/nomprojet
